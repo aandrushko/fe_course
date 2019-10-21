@@ -12,13 +12,13 @@
     <main>
         <div class="main-div-baner">
             <div class="container">
-                <div class="row align-items-center">
-                    <h1>Blog</h1> 
+                <div class="row align-items-center-baner">
+                    <h1><b>Blog</b></h1> 
                 </div>
             </div>      
         </div>
             <div class="container">
-                <div class="row-main-header-blogPage"> <h2>Blog Page</h2>
+                <div class="row-main-header-blogPage"> <h2><b> Blog Page</b></h2>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
@@ -32,12 +32,12 @@
                             </div>
                             <div class="row justify-content-between">
                                 <div class="col-4">
-                                <p> Share : <img src="../assets/icon/face.png" alt="facebook icon" title="facebook" width="22" height="16">
+                                <p class="share-under-img"> <b>Share :</b> <img src="../assets/icon/face.png" alt="facebook icon" title="facebook" width="22" height="16">
                                 <img src="../assets/icon/twitter.png" alt="twitter icon" title="twitter"  width="22" height="16">
                                 <img src="../assets/icon/g+.png" alt="google icon" title="google"  width="22" height="16"></p>
                                 </div>
                                 <div class="col-4">
-                                Comment : 26   |   Like : 250
+                                    <p class="main-blog-coment"> Comment : 26   |   Like : 250</p>
                                 </div>
                         </div>
                         <div class="row">
@@ -50,12 +50,12 @@
                                 </div>
                                 <div class="row justify-content-between">
                                     <div class="col-4">
-                                        <p> Share : <img src="../assets/icon/face.png" alt="facebook icon" title="facebook"  width="22" height="16"> 
+                                        <p class="share-under-img"> <b>Share :</b> <img src="../assets/icon/face.png" alt="facebook icon" title="facebook"  width="22" height="16"> 
                                         <img src="../assets/icon/twitter.png" alt="twitter icon" title="twitter"  width="22" height="16">
                                         <img src="../assets/icon/g+.png" alt="google icon" title="google"  width="22" height="16"></p>
                                     </div>
                                     <div class="col-4">
-                                        <p> Comment : 15   |   Like : 400</p>
+                                        <p class="main-blog-coment"> Comment : 15   |   Like : 400</p>
                                     </div>
                             </div>
                             <div class="row">
@@ -70,12 +70,12 @@
                                     </div>
                                     <div class="row justify-content-between">
                                         <div class="col-4">
-                                        <p> Share : <img src="../assets/icon/face.png" alt="facebook icon" title="facebook" width="22" height="16">
+                                        <p class="share-under-img"> <b>Share :</b> <img src="../assets/icon/face.png" alt="facebook icon" title="facebook" width="22" height="16">
                                         <img src="../assets/icon/twitter.png" alt="twitter icon" title="twitter"  width="22" height="16">
                                         <img src="../assets/icon/g+.png" alt="google icon" title="google"  width="22" height="16"></p>
                                         </div>
                                         <div class="col-4">
-                                        Comment : 05   |   Like : 130
+                                            <p class="main-blog-coment">Comment : 05   |   Like : 130</p>
                                         </div>
                                 </div>
             
@@ -85,7 +85,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <form action="post">
-                                        <input type="search" name="" id="">
+                                        <input class="aside-search-input" type="search" name="" id="" placeholder="SEARCH">
                                     </form>
                                 </div>  
                             </div>
@@ -124,24 +124,27 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6"><img src="../assets/img/son1.png" alt="" width="140" height="100"></div>
-                                <div class="col-md-6">19- JAN- 2017
-                                        Nullam at mauris 
-                                        pellentesque
+                                <div class="col-md-6">
+                                        <p>19- JAN- 2017</p>
+                                    <span>Nullam at mauris 
+                                    pellentesque</span>
                                 </div>
                             </div>
                             <div class="row">
-                                    <div class="col-md-6"><img src="../assets/img/son2.png" alt="" width="140" height="100"></div>
-                                    <div class="col-md-6">25- JAN- 2017
-                                            Mauris sodales estac
-                                            quam pulvinar
-                                    </div>
+                                <div class="col-md-6"><img src="../assets/img/son2.png" alt="" width="140" height="100"></div>
+                                <div class="col-md-6">
+                                    <p>25- JAN- 2017</p>
+                                    <span>Mauris sodales estac
+                                    quam pulvinarz</span>
+                                </div>
                             </div>
                             <div class="row">
-                                    <div class="col-md-6"><img src="../assets/img/son3.png" alt="" width="140" height="100"></div>
-                                    <div class="col-md-6">28-JAN- 2017
-                                            Vestibulum lacinia 
-                                            massa et justo 
-                                    </div>
+                                <div class="col-md-6"><img src="../assets/img/son3.png" alt="" width="140" height="100"></div>
+                                <div class="col-md-6">
+                                        <p>28-JAN- 2017</p>
+                                    <span>Vestibulum lacinia 
+                                    massa et justo </span>
+                                </div>
                             </div>
                             <div class="row"> <h3>Tags</h3></div>
                             <div class="row justify-content-start">
@@ -162,11 +165,11 @@
                             </div>
                              <div class="row"><h3>Subscribe Newsletter</h3></div> 
                              <div class="row">
-                                 <form action="" method="post">
-                                     <input type="text"name="name" placeholder="Name" required>
-                                     <input type="email" name="email" id="" placeholder="Email Address">
+                                 <form action="" method="post" class="form-subscribe">
+                                     <input class="input-name" type="text"name="name" placeholder="Name" required>
+                                     <input class="input-email" type="email" name="email" id="" placeholder="Email Address" required>
                                      <br>
-                                     <button type="SUBSCRIBE">SUBSCRIBE</button>
+                                     <button class="button-subscribe" type="SUBSCRIBE">SUBSCRIBE</button>
                                  </form>
                              </div>  
                         </div>
