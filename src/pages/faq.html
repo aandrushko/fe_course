@@ -13,11 +13,12 @@
 
     <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/5b2252f7f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <script src="../../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../dist/css/faq.css">
   <title>FAQ</title>
   </head>
   <body>
+    <!-- Header should be there -->
     <header>
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
@@ -61,18 +62,193 @@
             </div>
           </div>
         </div> 
-       </div>
+      </div>
     </header>
-    <!-- Header should be there -->
     <section>
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col d-flex align-items-center">
-              <h1>FAQ`S</h1>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col d-flex align-items-center">
+            <h1>FAQ'S</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="col-12">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search Questions" aria-label="Search">
+            </form>
+          </div>
+          <div class="col-12">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Morbi ac mi pulvinar, imperdiet magnanec, scelerisque quam ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Vivamus aliquet estnonmi feugiat, nonlaoreet diam egestas ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                      Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Cras eget elit ultricies leo euismod vehicula ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Sed malesuada leo sitamet ullamcorper ultrices ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Donec nonurna velorci suscipit efficitur ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Curabitur et nullaquis turpis tempor congue atvel neque ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Sed convallis tortor consectetur, posuere exutvehicula ipsum ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Phasellus at velit quis massa ullamcorper scelerisque ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingNine">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                      Fusce id nulla sit amet libero porta porttitor necquisodio ?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                  <div class="card-body">
+                    Distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </main>
+    <div class="askQuestion">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+              <h2>Ask Your Questions</h2>
+              <p>If your question has not been answered, you can submit your own by using the form below. Alternatively, 
+                feel free to <a href="contacts.html">Contact Us</a> and one of our staff will be happy to assist you.</p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <form class="" action="#">
+              <input class="" type="text" name="name" placeholder="Your Name" required>
+              <input class="" type="email" name="email" placeholder="Your Email" required>
+              <textarea class="" name="textarea" id="#" placeholder="Question" required></textarea>
+              <div class="button text-center">
+                <button class="btn qstnSend">Ask Question</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer should be there -->
     <footer>
       <div class="container">
@@ -111,7 +287,7 @@
               <li><a href="#">International</a></li>
             </ul>
           </div>
-           <!-- <i class="far fa-envelope"></i> -->
+          <!-- <i class="far fa-envelope"></i> -->
           <div class="col-lg-auto col-md-auto">
             <div class="subscribe">
               <h3>Newsletter</h3>
@@ -119,7 +295,7 @@
               <div class="formField">
                 <div class="input-group mb-3">
                   <i class="far fa-envelope"></i>
-                  <input type="email" class="form-control" placeholder="      Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <input type="email" class="form-control" placeholder="         Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
                   <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button">Subscribe</button>
                   </div>

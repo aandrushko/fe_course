@@ -32,7 +32,7 @@
 
 select.formSelector{
 	-webkit-appearance: none;
-  -webkit-border-radius: 2px;
+    -webkit-border-radius: 2px;
 }
 
 .content textarea{
