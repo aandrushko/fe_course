@@ -2,3 +2,254 @@
 @import '../../src/assets/css/footer.css';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
+
+$font-medium: 500;
+$p-size: 0.9em;
+$p-color: #5c666a;
+$font-semiBold: 600;
+$container-padding: 100px 0;
+$p-line-hight: 2;
+
+main{
+    .container{
+        padding: $container-padding;
+        
+        
+        .imgBlock{
+            img{
+                width: 100%;
+                max-width: 568px;
+            }
+        }
+        .whatWe{
+            padding-left: 75px;
+            h2{
+                margin-top: 45px;
+                margin-bottom: 30px;
+            }
+            .mainParagraph{
+                color: $p-color;
+                line-height: $p-line-hight;
+                margin-bottom: 65px;
+            }
+        }
+        svg{
+            margin-right: 20px;
+            font-size: 2.6em;
+            font-weight: 100;
+        }
+        .textInfo{
+            font-size: 0.9em;
+            h4{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.satisfaction{
+    background-color: #ebf1f6;
+    padding: $container-padding;
+    h1{
+        font-weight: $font-semiBold;
+        color: #e9563d;
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+    h2{
+        font-weight: $font-semiBold;
+        margin-bottom: 40px;
+    }
+    p{
+        color: $p-color;
+        line-height: $p-line-hight;
+        margin-bottom: 45px;
+        &::before{
+            content: open-quote;
+            font-family: serif;
+            font-weight: bold;
+            font-size: 5em;
+            color: black;
+            position: absolute;
+            top: 90px;
+            left: -70px;
+        }
+        &::after{
+            content: close-quote;
+            font-family: serif;
+            font-weight: bold;
+            font-size: 5em;
+            color: black;
+            transform: scale(1, -1);
+            position: absolute;
+            bottom: 70px;
+            right: -70px;
+        }
+    }
+    hr{
+        height: 3px;
+        width: 22px;
+        background-color: black;
+        margin: 0 auto; 
+    }
+    h6{
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    .fa-star{
+        color: #ebb627;
+    }
+}
+
+.aboutBlock{
+    .row{
+        padding: $container-padding;
+    }
+    
+    .imgBox{
+        .fa-space-shuttle{
+            transform: rotate(-90deg);
+            font-size: 2em;
+            margin-top: 15px;
+            margin-right: 25px;
+        }
+        .fa-bullseye{
+            font-size: 2.8em;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+    }
+    h2{
+        font-weight: bold;
+    }
+    p{
+        font-size: $p-size;
+        color: $p-color;
+        line-height: $p-line-hight;
+    }
+    form{
+        text-align: center;
+    }
+    button{
+        background-color: #67b930;
+        color: white;
+        text-transform: uppercase;
+        height: 50px;
+        padding: 0 28px;
+        font-weight: $font-semiBold;
+        font-size: $p-size;
+        border-radius: 3px;
+        border: none;
+        letter-spacing: 1px;
+        margin-top: 60px;
+        &:hover{
+            background-color: #5aa229;
+        }
+        &:active{
+            background-color: #4c8a23;
+        }
+    }
+    .carousel-indicators{
+        position: absolute;
+        bottom: -80px;
+        left: 5px;
+        li{
+            width: 13px;
+            height: 13px;
+            border-top: 0;
+            border-bottom: 0;
+            border-radius: 10px;
+            background-color: #c0cad3;
+        }
+        .active{
+            background-color: #e9563d;
+        }
+    }
+    .carousel-item{
+        img{
+            max-width: 270px;
+            height: 331px;
+            margin-bottom: 15px;
+        }
+        .row{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .infoBlock{
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+            h6{
+                color: white;
+                margin-bottom: 0;
+            }
+            span{
+                color: $p-color;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+    main{
+        .container{
+            .whatWe{
+                h2{
+                    margin-top: 35px;
+                    padding-left: 15px;
+                }
+                .mainParagraph{
+                    margin-bottom: 35px;
+                }
+            }
+            svg{
+                margin-right: 15px;
+                font-size: 2em;
+            }
+            .textInfo{
+                font-size: 0.8em;
+                
+            }
+        }
+    }
+    .aboutBlock{
+        .carousel-item{
+            img{
+                max-width: 220px;
+                height: 281px;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    main{
+        
+        .container{
+            .imgBlock{
+                text-align: center;
+                img{
+                    text-align: center;
+                }
+            }
+            .whatWe{
+                padding-left: 15px;
+            }
+            
+            .textInfo{
+                h4{
+                    margin: inherit;
+                }
+            }
+        }
+    }
+    .aboutBlock{
+        .carousel-item{
+            img{
+                max-width: 270px;
+                height: 331px;
+            }
+        }
+    }
+}
