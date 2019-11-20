@@ -1,0 +1,26 @@
+{
+  "name": "fe_course",
+  "version": "1.0.0",
+  "description": "Зверстати проект згідно макету -- https://drive.google.com/drive/folders/1XgOEL2zLxxMXiNjyZnCh_7BkF7nrVpjP",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w src/assets/scss/ -o dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aandrushko/fe_course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aandrushko/fe_course/issues"
+  },
+  "homepage": "https://github.com/aandrushko/fe_course#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.13.0",
+    "npm": "^6.13.1"
+  },
+  "keywords": [],
+  "devDependencies": {}
+}
